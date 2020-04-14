@@ -30,10 +30,20 @@
 			<version>5</version>
 			<scope>provided</scope>
 		</dependency>
+		
+		<!-- Backend Linking -->
+		
+		
+		<dependency>
+		 	<groupId>net.kzn</groupId>
+  			<artifactId>shoppingbackend</artifactId>
+  			<version>0.0.1-SNAPSHOT</version>	
+		</dependency>
+		
+		
 
 		<!-- SPRING -->
 
-		
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>

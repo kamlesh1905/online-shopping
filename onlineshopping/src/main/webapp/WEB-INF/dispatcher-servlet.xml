@@ -10,8 +10,20 @@
         http://www.springframework.org/schema/context/spring-context.xsd 
         http://www.springframework.org/schema/mvc 
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+        
+        
+        	<!-- Loading static resources -->
+	
+	<mvc:annotation-driven/>
+
+	
+	<mvc:resources location="/assets/" mapping="/resources/**"/>
+	
+        
+        
 
 <context:component-scan base-package="net.kzn.onlineshopping.controller"></context:component-scan> 
+<context:component-scan base-package="net.kzn.shoppingbackend.daoimpl"></context:component-scan> 
 
 
 <!-- <beans xmlns="http://www.springframework.org/schema/beans"
@@ -28,11 +40,6 @@
         <property name="suffix" value=".jsp"></property>    
     </bean> 
 	
-	<!-- Loading static resources -->
-	
-	<mvc:annotation-driven/>
-	
-	<mvc:resources location="/assets/" mapping="/resources/**"/>
-	
+
 
 </beans>      

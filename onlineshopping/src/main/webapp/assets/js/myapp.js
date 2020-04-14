@@ -8,8 +8,12 @@ $(function()
 	case 'About Us':
 		$('#about').addClass('active');
 		break;
+	case 'All Product':
+		$('#listProduct').addClass('active');
+		break;
 	default:
-		$('#home').addClass('active');	
+		$('#listProduct').addClass('active');	
+	    $('#a_'+menu).addClass('active');
 		break;
 	}
 });

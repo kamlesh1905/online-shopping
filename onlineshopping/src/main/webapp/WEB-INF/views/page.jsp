@@ -11,7 +11,7 @@
 <spring:url var="js" value="/resources/js" />
 <spring:url var="images" value="/resources/images" />
 
-<c:set var="contextRoot" value="${pageContext.request.contextPath}" />
+<c:set var="contextRoot" value="${pageContext.request.contextPath}"/>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -68,12 +68,19 @@
 				<%@include file="contact.jsp"%>
 			</c:if>
 
+			<!-- Load when user click All Products about -->
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts==true}">
+				<%@include file="listproduct.jsp"%>
+			</c:if>
+
 		</div>
 
 		<!-- Footer -->
-		<%@include file="./shared/footer.jsp"%>>
+		
+		<%@include file="./shared/footer.jsp"%>
+		
 
-		<!-- /.container -->
+		<!-- container -->
 
 		<!-- JavaScript -->
 		<script src="${js}/jquery.js"></script>
