@@ -10,8 +10,6 @@
 
 		</div>
 
-	
-
 	<!-- would be to display actual product -->
 
 	<div class="col-md-9">
