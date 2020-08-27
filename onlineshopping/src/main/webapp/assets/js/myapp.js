@@ -74,7 +74,7 @@ $(function()
 				        		data: 'code',
 				        		mRender: function(data,type,row)
 				        		{
-				        			return '<image src = "'+window.contextRoot+'/resources/images/'+data+'.jpg"/>'
+				        			return '<image src = "'+window.contextRoot+'/resources/images/'+data+'.jpg" class="dataTableImg"/>'
 				        		}
 				        	 },
 				   			        	 
