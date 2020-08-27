@@ -26,17 +26,22 @@
 
 <script>
 		window.menu = '${title}';
-    </script>
+
+		window.contextRoot = '${contextRoot}'
+</script>
 
 
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
-<!-- Add custom CSS here -->
-<link href="${css}/myapp.css" rel="stylesheet">
-
 <!-- Add custom CSS here  bootstrap-readable-theme -->
 <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
+
+<!-- Add custom CSS here  bootstrap-datTable -->
+<link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
+
+<!-- Add custom CSS here -->
+<link href="${css}/myapp.css" rel="stylesheet">
 
 
 </head>
@@ -72,7 +77,13 @@
 			<c:if test="${userClickAllProducts == true or userClickCategoryProducts==true}">
 				<%@include file="listproduct.jsp"%>
 			</c:if>
-
+			
+			
+			<!-- Load when user click to view single product -->
+			<c:if test="${userClickShowProduct == true }">
+				<%@include file="singleProduct.jsp"%>
+			</c:if>
+			
 		</div>
 
 		<!-- Footer -->
@@ -85,6 +96,12 @@
 		<!-- JavaScript -->
 		<script src="${js}/jquery.js"></script>
 		<script src="${js}/bootstrap.min.js"></script>
+		<!-- datatable Plugin -->
+		<script src="${js}/jquery.dataTables.js"></script>
+		
+		<!-- datatable bootstrap script -->
+		<script src="${js}/dataTables.bootstrap.js"></script>
+		
 		<!-- self added javscript file -->
 		<script src="${js}/myapp.js"></script>
 

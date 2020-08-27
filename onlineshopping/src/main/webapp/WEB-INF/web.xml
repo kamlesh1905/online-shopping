@@ -8,16 +8,14 @@
           Configuring front-controller
          <servlet>
          <servlet-name>dispatcher</servlet-name>
-         <servlet-class>org.spingframework.web.servlet.DispatcherServlet</servlet-class>
-         
-         
+         <servlet-class>org.spingframework.web.servlet.DispatcherServlet</servlet-class>  
          </servlet>
-                  
-         <servlet-mapping>
-         <servlet-name>dispatcher</servlet-name>
-         <url-pattern>/</url-pattern>
-         </servlet-mapping>
-          
+         
+          <servlet-mapping>
+          <servlet-name>dispatcher</servlet-name>
+          <url-pattern>/</url-pattern>
+          </servlet-mapping>
+         
 </web-app> -->
  
   
@@ -31,11 +29,20 @@
    
    <servlet>    
     <servlet-name>dispatcher</servlet-name>    
-    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>    
-    <load-on-startup>1</load-on-startup>      
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class> 
+    
+    
+    <!-- FOr throwing exception -->
+		<init-param>
+			<param-name>throwExceptionIfNoHandlerFound</param-name>
+			<param-value>true</param-value>
+		</init-param>
+      
+    <!-- <load-on-startup>1</load-on-startup>     -->  
+    
   </servlet>  
     
-<servlet-mapping>    
+  <servlet-mapping>    
     <servlet-name>dispatcher</servlet-name>    
     <url-pattern>/</url-pattern>    
 </servlet-mapping> 

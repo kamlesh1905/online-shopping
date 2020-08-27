@@ -18,10 +18,6 @@ public class CatergoryDAOImpl implements CategoryDAO {
 	@Autowired
 	private SessionFactory sessionFactory;
 
-
-		
-	
-
 	/*
 	 * private static List<Category> categories = new ArrayList<>()
 	 * static { Category category = new Category(); category.setId(1);
@@ -80,8 +76,9 @@ public class CatergoryDAOImpl implements CategoryDAO {
 		} catch (Exception ex) {
 
 			ex.printStackTrace();
-			return false;
+			
 		}
+		return false;
 
 	}
 
@@ -94,8 +91,9 @@ public class CatergoryDAOImpl implements CategoryDAO {
 		} catch (Exception ex) {
 
 			ex.printStackTrace();
-			return false;
+			
 		}
+		return false;
 	}
 
 	@Override
@@ -109,8 +107,9 @@ public class CatergoryDAOImpl implements CategoryDAO {
 		} catch (Exception ex) {
 
 			ex.printStackTrace();
-			return false;
+			
 		}
+		return false;
 	}
 
 }

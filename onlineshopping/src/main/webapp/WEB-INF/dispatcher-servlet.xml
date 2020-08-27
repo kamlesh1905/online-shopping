@@ -11,17 +11,13 @@
         http://www.springframework.org/schema/mvc 
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
         
-        
-        	<!-- Loading static resources -->
+       
+       	<!-- Loading static resources -->
 	
 	<mvc:annotation-driven/>
-
 	
 	<mvc:resources location="/assets/" mapping="/resources/**"/>
-	
-        
-        
-
+	     
 <!-- <context:component-scan base-package="net.kzn.onlineshopping.controller"></context:component-scan> --> 
 <!-- <context:component-scan base-package="net.kzn.shoppingbackend.daoimpl"></context:component-scan>  -->
 
