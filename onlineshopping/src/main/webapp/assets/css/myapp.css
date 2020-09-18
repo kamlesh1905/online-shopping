@@ -71,7 +71,7 @@ footer {
 	
 	position:absolute;
 	bottom:15px;
-	height:40px;
+	height:40px;s
 }
 
 .dataTableImg {
@@ -79,4 +79,11 @@ footer {
 	width:100px;
 	height: 100px;
 	
-}s
+
+.help-block {
+
+	color: red;
+}
+	
+	
+}

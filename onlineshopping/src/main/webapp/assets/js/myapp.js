@@ -8,7 +8,7 @@ $(function()
 	case 'About Us':
 		$('#about').addClass('active');
 		break;
-	case 'All Product':
+	case 'All Products':
 		$('#listProduct').addClass('active');
 		break;
 	default:
@@ -88,7 +88,7 @@ $(function()
 				        		 data:'unitPrice',
 				        		 mRender: function(data,type,row)
 				        		 {
-				        			 return '&#8377; ' + data
+				        			 return '&#8377; ' + data;
 				        		 }
 				        	 
 				        	 },
@@ -129,14 +129,24 @@ $(function()
 				        			 return str;
 				        		 }
 				        	 }
-				        	 
-				        	 
-				            ]
-				   
-				   
+				        	 				        	 
+				            ]	
+				         
 			   });
 	   
 	   
 	}
 
+    //dismissing the alert after 3 seconds
+    var $alert = $('.alert');
+     if($alert.length)
+    {
+    	 setTimeout(function(){
+    		 $alert.fadeOut('slow');
+    	 }, 3000)
+    	 
+    }
+     
+    
+    
 
