@@ -4,7 +4,7 @@
 
 		<!-- would be to display sidebar -->
 
-		<div class="col-md-3">
+		<div class="col-md-2">
 
 			<%@include file="./shared/sidebar.jsp"%>
 
@@ -12,7 +12,7 @@
 
 		<!-- would be to display actual product -->
 
-		<div class="col-md-9">
+		<div class="col-md-10">
 
 			<!-- Added breadcrumb component -->
 

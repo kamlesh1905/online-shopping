@@ -3,11 +3,11 @@
 
         <div class="row">
 
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <%@include file="./shared/sidebar.jsp" %>
             </div>
 
-            <div class="col-md-9">
+            <div class="col-md-10">
 
                 <div class="row carousel-holder">
 
@@ -17,6 +17,7 @@
                                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                                 <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                                 <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                  <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                             </ol>
                             <div class="carousel-inner">
                                 <div class="item active">
@@ -26,6 +27,9 @@
                                     <img class="slide-image" src="resources/images/banner2.jpg" alt="">
                                 </div>
                                 <div class="item">
+                                    <img class="slide-image" src="resources/images/banner3.jpg" alt="">
+                                </div>
+                                 <div class="item">
                                     <img class="slide-image" src="resources/images/banner4.jpg" alt="">
                                 </div>
                             </div>

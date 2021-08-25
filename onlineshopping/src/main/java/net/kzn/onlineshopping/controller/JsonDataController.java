@@ -25,8 +25,7 @@ public class JsonDataController
 	public List<Product> getAllProduct()
 	{
 		System.out.println("product");
-		return productDAO.listActiveProducts();
-		
+		return productDAO.listActiveProducts();	
 	}
 	
 	@RequestMapping("/category/{id}/products")

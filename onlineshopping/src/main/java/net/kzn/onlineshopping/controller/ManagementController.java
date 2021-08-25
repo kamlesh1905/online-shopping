@@ -36,7 +36,6 @@ public class ManagementController
 		mv.addObject("userClickManageProducts", true);
 		mv.addObject("title", "manageProducts");
 		Product nProduct = new Product();
-		
 		//set few of the fields
 		nProduct.setSupplierId(1);
 		nProduct.setActive(true);
@@ -61,7 +60,6 @@ public class ManagementController
 	@RequestMapping(value="/products", method=RequestMethod.POST)
 	public String handleProductSubmission(@ModelAttribute("product") Product mproduct) 
 	{
-		
 		logger.info(mproduct.toString());
 		
 		//create a new product
@@ -72,7 +70,7 @@ public class ManagementController
 	}
 	
 
-    //returing categories for all the request mapping
+    //Returning categories for all the request mapping
 	@ModelAttribute("categories") 
 	public List<Category> getCategories() 
 	{
